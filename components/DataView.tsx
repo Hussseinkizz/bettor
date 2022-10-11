@@ -7,6 +7,9 @@ if (isError) return <div>failed to load</div>;
   if (isLoading) return <div>loading...</div>;
 
   // render data
+  if(data) {
+    console.log('data',data)
+  }
   return <>
    <h1 className="font-bold">Show Data</h1>
    {data?.bookmaker.map((item: any) => (
